@@ -165,22 +165,17 @@ ul.row {
   list-style: none;
 }
 
-.col-1-3 {
-  width: 33.33%;
-  float: left;
-  padding: 0.5rem;
-}
-
-.col-1-2 {
-  width: 50%;
-  float: left;
-  padding: 0.5rem;
-}
-
+/* creates a new row after each instance of the class row */
 .row::after {
   content: "";
   display: table;
   clear: both;
+}
+
+
+.col-1-2, .col-1-3 {
+  float: left;
+  padding: 0.5rem;
 }
 
 .footer-copyright {
@@ -201,4 +196,17 @@ ul.row {
 
 .footer {
   padding: var(--footer-padding);
+}
+
+/* all classes that start with col- */
+[class^="col-"] {
+  float: left;
+  padding: 0.5rem;
+}
+
+.col-1-3 {
+  width: 33.33%;
+}
+.col-1-2 {
+  width: 50%;
 }
