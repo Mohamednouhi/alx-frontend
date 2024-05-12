@@ -285,9 +285,9 @@ ul.row {
 }
 
 .section-hero .section-title {
-  margin-bottom: calc(5rem); 
+  margin-bottom: 5rem; 
 }
 
 .section-hero .section-inner {
-  padding: calc(10rem) calc(40rem) calc(2rem) calc(0); 
+  padding: 10rem 40rem 2rem 0; 
 }
